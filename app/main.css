@@ -655,3 +655,50 @@ p {
     margin-left: 9px;
     line-height: 14px;
 }
+.show-video {
+    height: 429px;
+    background-color: #000;
+}
+#header-video {
+    display: block;
+    margin: 0 auto;
+}
+.show-video__wrapper {
+    position: relative;
+}
+.close-video {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background-color: rgba(164,164,164,.45);
+    border-radius: 50%;
+    z-index: 3;
+    color: #d9d9d9;
+    text-decoration: underline;
+    font-weight: 300;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    width: 39px;
+    height: 39px;
+}
+.close-video:hover {
+    background-color: #3897da;
+}
+.close-video::before, .close-video::after {
+    content: "";
+    display: block;
+    width: 21px;
+    height: 1px;
+    background-color: #d9d9d9;
+    transition: .3s ease-in-out;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+.close-video::before {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.close-video::after {
+    transform: translate(-50%, -50%)  rotate(45deg);
+}

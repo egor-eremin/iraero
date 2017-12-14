@@ -84,9 +84,59 @@
         </div>
     </div>
     <div class="show-video">
-        
+        <div class="template-width">
+            <div class="show-video__wrapper">
+                <!--В атрибут data-youtubeId ставим youtube ID -->
+                <div id="header-video" data-youtubeId="gZ-zBbzS_V4">
+                    <script>
+                        // 2. This code loads the IFrame Player API code asynchronously.
+                        var tag = document.createElement('script');
+
+                        tag.src = "//www.youtube.com/iframe_api";
+                        var firstScriptTag = document.getElementsByTagName('script')[0];
+                        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+                        // 3. This function creates an <iframe> (and YouTube player)
+                        //    after the API code downloads.
+                        var player;
+                        var youyubeId = document.getElementById('header-video').getAttribute('data-youtubeId');
+                        function onYouTubeIframeAPIReady() {
+                            player = new YT.Player('header-video', {
+                                height: '429',
+                                width: '768',
+                                videoId: youyubeId,
+                            });
+                        }
+                    </script>
+                </div>
+                <button class="close-video"></button>
+            </div>
+
+        </div>
     </div>
 </header>
+    <div class="main-wrapper">
+        <main>
+            <div class="template-width">
+                <section class="section-news">
+                    <div class="template-width">
+                        <h2>Новости</h2>
+                        <div class="news-block">
+                            <div class="news-block__item"></div>
+                            <div class="news-block__item"></div>
+                            <div class="news-block__item"></div>
+                            <div class="news-block__item"></div>
+                            <a href="">Все новости</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <aside>
+
+        </aside>
+
+    </div>
 <footer class="main-footer">
     <div class="template-width template-width_flex">
         <div class="main-footer__item">

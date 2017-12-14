@@ -34,3 +34,9 @@
         e.preventDefault();
     });
 })();
+(function closeVideo() {
+    $('.close-video').on('click', function () {
+        player.stopVideo();
+        $('.show-video').slideUp(400);
+    }) 
+})();
