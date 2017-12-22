@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" id="viewport" content="width=1000">
     <title>Мини-футбол 38</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Roboto:300,400,700|Ubuntu&amp;subset=cyrillic"
           rel="stylesheet">
@@ -11,9 +12,10 @@
     <link href="app/css/font-awesome.min.css" rel="stylesheet">
     <link href="app/css/gray.min.css" rel="stylesheet">
     <link href="app/css/slick.css" rel="stylesheet">
+    <link href="app/css/select2.min.css" rel="stylesheet">
     <link href="app/css/tooltipster.bundle.css" rel="stylesheet">
     <link href="app/main.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="/favicon.png"/>
+    <!--<link rel="icon" type="image/png" href="/favicon.png"/>-->
 </head>
 <body>
 <header class="hedaer">
@@ -194,7 +196,7 @@
                             </li>
                         </ul>
                         <div id="section1">
-                            <div class="table-result table-result_long-tournament">
+                            <div class="table-result" style="background-color: #3897d9">
                                 <div class="table-result__header">
                                     <div class="table-result__title">
                                         "Длинный" турнир
@@ -250,7 +252,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="table-result table-result_short-tournament">
+                            <div class="table-result" style="background-color: #47d2e9">
                                 <div class="table-result__header">
                                     <div class="table-result__title">
                                         "Короткий" турнир
@@ -306,7 +308,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="table-result table-result_veterans-tournament">
+                            <div class="table-result" style="background-color: #53df83">
                                 <div class="table-result__header">
                                     <div class="table-result__title">
                                         "Короткий" турнир
@@ -364,7 +366,7 @@
                             </div>
                         </div>
                         <div id="section2">
-                            <div class="table-result table-result_long-tournament">
+                            <div class="table-result table-result__upcoming-matches" style="background-color: #3897d9">
                                 <div class="table-result__header">
                                     <div class="table-result__title">
                                         "Длинный" турнир
@@ -372,14 +374,20 @@
                                     <a href="/long-tournament.html" class="all-link all-link_white">Смотерть все</a>
                                 </div>
                                 <div class="table-result__row">
-                                    <div class="table-result__date">23.10.2017</div>
+                                    <div class="flex-wrapper">
+                                        <div class="table-result__date">23.10.2017</div>
+                                        <div class="table-result__time">21:00</div>
+                                    </div>
+                                    <a href="#" class="table-result__location">
+                                        Красные казармы
+                                    </a>
                                     <div class="table-result__score-block">
                                         <a href="#" class="table-result__team">
                                             <img src="images/team2.png" alt="team logo">
                                             Горизонт
                                         </a>
                                         <div class="table-result__score">
-                                            5 : 8
+                                            - : -
                                         </div>
                                         <a href="#" class="table-result__team">
                                             <img src="images/team3.png" alt="team logo">
@@ -388,14 +396,20 @@
                                     </div>
                                 </div>
                                 <div class="table-result__row">
-                                    <div class="table-result__date">23.10.2017</div>
+                                    <div class="flex-wrapper">
+                                        <div class="table-result__date">23.10.2017</div>
+                                        <div class="table-result__time">21:00</div>
+                                    </div>
+                                    <a href="#" class="table-result__location">
+                                        Красные казармы
+                                    </a>
                                     <div class="table-result__score-block">
                                         <a href="#" class="table-result__team">
                                             <img src="images/team1.png" alt="team logo">
                                             Star/Юр.департамент
                                         </a>
                                         <div class="table-result__score">
-                                            3 : 7
+                                            - : -
                                         </div>
                                         <a href="#" class="table-result__team">
                                             <img src="images/team4.png" alt="team logo">
@@ -404,14 +418,20 @@
                                     </div>
                                 </div>
                                 <div class="table-result__row">
-                                    <div class="table-result__date">23.10.2017</div>
+                                    <div class="flex-wrapper">
+                                        <div class="table-result__date">23.10.2017</div>
+                                        <div class="table-result__time">21:00</div>
+                                    </div>
+                                    <a href="#" class="table-result__location">
+                                        Красные казармы
+                                    </a>
                                     <div class="table-result__score-block">
                                         <a href="#" class="table-result__team">
                                             <img src="images/team1.png" alt="team logo">
                                             Горизонт
                                         </a>
                                         <div class="table-result__score">
-                                            3 : 7
+                                            - : -
                                         </div>
                                         <a href="#" class="table-result__team">
                                             <img src="images/team4.png" alt="team logo">
@@ -420,7 +440,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="table-result table-result_short-tournament">
+                            <div class="table-result table-result__upcoming-matches" style="background-color: #47d2e9">
                                 <div class="table-result__header">
                                     <div class="table-result__title">
                                         "Короткий" турнир
@@ -428,14 +448,20 @@
                                     <a href="/short-tournament.html" class="all-link all-link_white">Смотерть все</a>
                                 </div>
                                 <div class="table-result__row">
-                                    <div class="table-result__date">23.10.2017</div>
+                                    <div class="flex-wrapper">
+                                        <div class="table-result__date">23.10.2017</div>
+                                        <div class="table-result__time">21:00</div>
+                                    </div>
+                                    <a href="#" class="table-result__location">
+                                        Красные казармы
+                                    </a>
                                     <div class="table-result__score-block">
                                         <a href="#" class="table-result__team">
                                             <img src="images/team2.png" alt="team logo">
                                             Горизонт
                                         </a>
                                         <div class="table-result__score">
-                                            5 : 8
+                                            - : -
                                         </div>
                                         <a href="#" class="table-result__team">
                                             <img src="images/team3.png" alt="team logo">
@@ -444,14 +470,20 @@
                                     </div>
                                 </div>
                                 <div class="table-result__row">
-                                    <div class="table-result__date">23.10.2017</div>
+                                    <div class="flex-wrapper">
+                                        <div class="table-result__date">23.10.2017</div>
+                                        <div class="table-result__time">21:00</div>
+                                    </div>
+                                    <a href="#" class="table-result__location">
+                                        Красные казармы
+                                    </a>
                                     <div class="table-result__score-block">
                                         <a href="#" class="table-result__team">
                                             <img src="images/team1.png" alt="team logo">
                                             Горизонт
                                         </a>
                                         <div class="table-result__score">
-                                            3 : 7
+                                            - : -
                                         </div>
                                         <a href="#" class="table-result__team">
                                             <img src="images/team4.png" alt="team logo">
@@ -460,14 +492,20 @@
                                     </div>
                                 </div>
                                 <div class="table-result__row">
-                                    <div class="table-result__date">23.10.2017</div>
+                                    <div class="flex-wrapper">
+                                        <div class="table-result__date">23.10.2017</div>
+                                        <div class="table-result__time">21:00</div>
+                                    </div>
+                                    <a href="#" class="table-result__location">
+                                        Красные казармы
+                                    </a>
                                     <div class="table-result__score-block">
                                         <a href="#" class="table-result__team">
                                             <img src="images/team1.png" alt="team logo">
                                             Горизонт
                                         </a>
                                         <div class="table-result__score">
-                                            3 : 7
+                                            - : -
                                         </div>
                                         <a href="#" class="table-result__team">
                                             <img src="images/team4.png" alt="team logo">
@@ -476,7 +514,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="table-result table-result_veterans-tournament">
+                            <div class="table-result table-result__upcoming-matches" style="background-color: #53df83">
                                 <div class="table-result__header">
                                     <div class="table-result__title">
                                         "Короткий" турнир
@@ -484,14 +522,20 @@
                                     <a href="/veterans-tournament.html" class="all-link all-link_white">Смотерть все</a>
                                 </div>
                                 <div class="table-result__row">
-                                    <div class="table-result__date">23.10.2017</div>
+                                    <div class="flex-wrapper">
+                                        <div class="table-result__date">23.10.2017</div>
+                                        <div class="table-result__time">21:00</div>
+                                    </div>
+                                    <a href="#" class="table-result__location">
+                                        Красные казармы
+                                    </a>
                                     <div class="table-result__score-block">
                                         <a href="#" class="table-result__team">
                                             <img src="images/team2.png" alt="team logo">
                                             Горизонт
                                         </a>
                                         <div class="table-result__score">
-                                            5 : 8
+                                            - : -
                                         </div>
                                         <a href="#" class="table-result__team">
                                             <img src="images/team3.png" alt="team logo">
@@ -500,14 +544,20 @@
                                     </div>
                                 </div>
                                 <div class="table-result__row">
-                                    <div class="table-result__date">23.10.2017</div>
+                                    <div class="flex-wrapper">
+                                        <div class="table-result__date">23.10.2017</div>
+                                        <div class="table-result__time">21:00</div>
+                                    </div>
+                                    <a href="#" class="table-result__location">
+                                        Красные казармы
+                                    </a>
                                     <div class="table-result__score-block">
                                         <a href="#" class="table-result__team">
                                             <img src="images/team1.png" alt="team logo">
                                             Горизонт
                                         </a>
                                         <div class="table-result__score">
-                                            3 : 7
+                                            - : -
                                         </div>
                                         <a href="#" class="table-result__team">
                                             <img src="images/team4.png" alt="team logo">
@@ -516,14 +566,20 @@
                                     </div>
                                 </div>
                                 <div class="table-result__row">
-                                    <div class="table-result__date">23.10.2017</div>
+                                    <div class="flex-wrapper">
+                                        <div class="table-result__date">23.10.2017</div>
+                                        <div class="table-result__time">21:00</div>
+                                    </div>
+                                    <a href="#" class="table-result__location">
+                                        Красные казармы
+                                    </a>
                                     <div class="table-result__score-block">
                                         <a href="#" class="table-result__team">
                                             <img src="images/team1.png" alt="team logo">
                                             Горизонт
                                         </a>
                                         <div class="table-result__score">
-                                            3 : 7
+                                            - : -
                                         </div>
                                         <a href="#" class="table-result__team">
                                             <img src="images/team4.png" alt="team logo">
@@ -537,7 +593,340 @@
                 </div>
 
                 <aside class="col-4">
-
+                    <div class="aside-table aside-table_standings">
+                        <div class="aside-table__header">
+                            <div class="aside-table__title">
+                                Турнирная таблица
+                            </div>
+                        </div>
+                        <div class="aside-table__table-header">
+                            <div class="aside-table__filter">
+                                <form action="#" method="post">
+                                    <select name="tournament-selection" id="tournament-selection"
+                                            class="tournament-selection__custom-selection">
+                                        <option value="long-tournament">Длинный турнир</option>
+                                        <option value="short-tournament">Короткий турнир</option>
+                                        <option value="veteranse-tournament">Турнир ветеранов</option>
+                                    </select>
+                                </form>
+                                <div class="aside-table__table-title">
+                                    Команда
+                                </div>
+                            </div>
+                            <div class="aside-table__header-title">
+                                <div class="aside-table__header-title-item aside-table__header-title-item_matches">
+                                    матчи
+                                </div>
+                                <div class="aside-table__header-title-item aside-table__header-title-item_spectacles">
+                                    очки
+                                </div>
+                            </div>
+                        </div>
+                        <div class="aside-table__row-wrapper">
+                            <div class="aside-table__row">
+                                <div class="aside-table__number"></div>
+                                <div class="aside-table__name">
+                                    <a href="#">ИрАэро</a>
+                                </div>
+                                <div class="aside-table__matches">
+                                    10
+                                </div>
+                                <div class="aside-table__spectacles">
+                                    29
+                                </div>
+                            </div>
+                            <div class="aside-table__row">
+                                <div class="aside-table__number"></div>
+                                <div class="aside-table__name">
+                                    <a href="#">Зенит</a>
+                                </div>
+                                <div class="aside-table__matches">
+                                    10
+                                </div>
+                                <div class="aside-table__spectacles">
+                                    29
+                                </div>
+                            </div>
+                            <div class="aside-table__row">
+                                <div class="aside-table__number"></div>
+                                <div class="aside-table__name">
+                                    <a href="#">ЦСКА</a>
+                                </div>
+                                <div class="aside-table__matches">
+                                    10
+                                </div>
+                                <div class="aside-table__spectacles">
+                                    29
+                                </div>
+                            </div>
+                            <div class="aside-table__row">
+                                <div class="aside-table__number"></div>
+                                <div class="aside-table__name">
+                                    <a href="#">Урал</a>
+                                </div>
+                                <div class="aside-table__matches">
+                                    10
+                                </div>
+                                <div class="aside-table__spectacles">
+                                    29
+                                </div>
+                            </div>
+                            <div class="aside-table__row">
+                                <div class="aside-table__number"></div>
+                                <div class="aside-table__name">
+                                    <a href="#">Краснодар</a>
+                                </div>
+                                <div class="aside-table__matches">
+                                    10
+                                </div>
+                                <div class="aside-table__spectacles">
+                                    29
+                                </div>
+                            </div>
+                            <div class="aside-table__row">
+                                <div class="aside-table__number"></div>
+                                <div class="aside-table__name">
+                                    <a href="#">Спартак</a>
+                                </div>
+                                <div class="aside-table__matches">
+                                    10
+                                </div>
+                                <div class="aside-table__spectacles">
+                                    29
+                                </div>
+                            </div>
+                            <div class="aside-table__row">
+                                <div class="aside-table__number"></div>
+                                <div class="aside-table__name">
+                                    <a href="#">Рубин</a>
+                                </div>
+                                <div class="aside-table__matches">
+                                    10
+                                </div>
+                                <div class="aside-table__spectacles">
+                                    29
+                                </div>
+                            </div>
+                            <div class="aside-table__row">
+                                <div class="aside-table__number"></div>
+                                <div class="aside-table__name">
+                                    <a href="#">Уфа</a>
+                                </div>
+                                <div class="aside-table__matches">
+                                    10
+                                </div>
+                                <div class="aside-table__spectacles">
+                                    29
+                                </div>
+                            </div>
+                            <div class="aside-table__row">
+                                <div class="aside-table__number"></div>
+                                <div class="aside-table__name">
+                                    <a href="#">Арсенал Тула</a>
+                                </div>
+                                <div class="aside-table__matches">
+                                    10
+                                </div>
+                                <div class="aside-table__spectacles">
+                                    29
+                                </div>
+                            </div>
+                            <div class="aside-table__row">
+                                <div class="aside-table__number"></div>
+                                <div class="aside-table__name">
+                                    <a href="#">Ахмат</a>
+                                </div>
+                                <div class="aside-table__matches">
+                                    10
+                                </div>
+                                <div class="aside-table__spectacles">
+                                    29
+                                </div>
+                            </div>
+                            <div class="aside-table__row">
+                                <div class="aside-table__number"></div>
+                                <div class="aside-table__name">
+                                    <a href="#">ИрАэро</a>
+                                </div>
+                                <div class="aside-table__matches">
+                                    10
+                                </div>
+                                <div class="aside-table__spectacles">
+                                    29
+                                </div>
+                            </div>
+                        </div>
+                        <div class="aside-table__footer">
+                            <a href="#" class="all-link all-link__not-margin">Полная таблица</a>
+                        </div>
+                    </div>
+                    <div class="aside-table aside-table_scorers">
+                        <div class="aside-table__header">
+                            <div class="aside-table__title">
+                                Лучшие бомбардиры
+                            </div>
+                        </div>
+                        <div class="aside-table__table-header">
+                            <div class="aside-table__filter">
+                                <form action="#" method="post">
+                                    <select name="tournament-selection" id="tournament-selection"
+                                            class="tournament-selection__custom-selection">
+                                        <option value="long-tournament">Длинный турнир</option>
+                                        <option value="short-tournament">Короткий турнир</option>
+                                        <option value="veteranse-tournament">Турнир ветеранов</option>
+                                    </select>
+                                </form>
+                                <div class="aside-table__table-title">
+                                    Игрок
+                                </div>
+                            </div>
+                            <div class="aside-table__header-title">
+                                <div class="aside-table__header-title-item aside-table__header-title-item_matches">
+                                    матчи
+                                </div>
+                                <div class="aside-table__header-title-item aside-table__header-title-item_goals">
+                                    голы
+                                </div>
+                            </div>
+                        </div>
+                        <div class="aside-table__row-wrapper">
+                            <div class="aside-table__row">
+                                <div class="aside-table__number"></div>
+                                <div class="aside-table__name">
+                                    <a href="#">Лионель Месси</a>
+                                </div>
+                                <div class="aside-table__matches">
+                                    10
+                                </div>
+                                <div class="aside-table__spectacles">
+                                    14
+                                </div>
+                            </div>
+                            <div class="aside-table__row">
+                                <div class="aside-table__number"></div>
+                                <div class="aside-table__name">
+                                    <a href="#">Симоне Дзадза</a>
+                                </div>
+                                <div class="aside-table__matches">
+                                    10
+                                </div>
+                                <div class="aside-table__spectacles">
+                                    9
+                                </div>
+                            </div>
+                            <div class="aside-table__row">
+                                <div class="aside-table__number"></div>
+                                <div class="aside-table__name">
+                                    <a href="#">Луис Суарес</a>
+                                </div>
+                                <div class="aside-table__matches">
+                                    10
+                                </div>
+                                <div class="aside-table__spectacles">
+                                    9
+                                </div>
+                            </div>
+                            <div class="aside-table__row">
+                                <div class="aside-table__number"></div>
+                                <div class="aside-table__name">
+                                    <a href="#">Кристиан Стуани</a>
+                                </div>
+                                <div class="aside-table__matches">
+                                    10
+                                </div>
+                                <div class="aside-table__spectacles">
+                                    8
+                                </div>
+                            </div>
+                            <div class="aside-table__row">
+                                <div class="aside-table__number"></div>
+                                <div class="aside-table__name">
+                                    <a href="#">Седрик Бакамбу</a>
+                                </div>
+                                <div class="aside-table__matches">
+                                    10
+                                </div>
+                                <div class="aside-table__spectacles">
+                                    8
+                                </div>
+                            </div>
+                            <div class="aside-table__row">
+                                <div class="aside-table__number"></div>
+                                <div class="aside-table__name">
+                                    <a href="#">Яго Аспас</a>
+                                </div>
+                                <div class="aside-table__matches">
+                                    10
+                                </div>
+                                <div class="aside-table__spectacles">
+                                    6
+                                </div>
+                            </div>
+                            <div class="aside-table__row">
+                                <div class="aside-table__number"></div>
+                                <div class="aside-table__name">
+                                    <a href="#">Родриго</a>
+                                </div>
+                                <div class="aside-table__matches">
+                                    10
+                                </div>
+                                <div class="aside-table__spectacles">
+                                    6
+                                </div>
+                            </div>
+                            <div class="aside-table__row">
+                                <div class="aside-table__number"></div>
+                                <div class="aside-table__name">
+                                    <a href="#">Арнальдо Антонио Санабрия</a>
+                                </div>
+                                <div class="aside-table__matches">
+                                    10
+                                </div>
+                                <div class="aside-table__spectacles">
+                                    6
+                                </div>
+                            </div>
+                            <div class="aside-table__row">
+                                <div class="aside-table__number"></div>
+                                <div class="aside-table__name">
+                                    <a href="#">Максимилиано Гомес</a>
+                                </div>
+                                <div class="aside-table__matches">
+                                    10
+                                </div>
+                                <div class="aside-table__spectacles">
+                                    5
+                                </div>
+                            </div>
+                            <div class="aside-table__row">
+                                <div class="aside-table__number"></div>
+                                <div class="aside-table__name">
+                                    <a href="#">Херар Морено</a>
+                                </div>
+                                <div class="aside-table__matches">
+                                    10
+                                </div>
+                                <div class="aside-table__spectacles">
+                                    4
+                                </div>
+                            </div>
+                            <div class="aside-table__row">
+                                <div class="aside-table__number"></div>
+                                <div class="aside-table__name">
+                                    <a href="#">Виллиан Жозе</a>
+                                </div>
+                                <div class="aside-table__matches">
+                                    10
+                                </div>
+                                <div class="aside-table__spectacles">
+                                    4
+                                </div>
+                            </div>
+                        </div>
+                        <div class="aside-table__footer">
+                            <a href="#" class="all-link all-link__not-margin">Полная таблица</a>
+                        </div>
+                    </div>
                 </aside>
             </div>
         </section>
@@ -592,7 +981,82 @@
                         <a href="#">«Тосно» в серии пенальти победил «Томь» и вышел в 1/4 финала Кубка России</a>
                     </h1>
                 </article>
-                <div class="all-link-block"><a href="/news.html" class="all-link">Все видео</a></div>
+                <div class="all-link-block"><a href="/video.html" class="all-link all-link_not-margin">Все видео</a>
+                </div>
+            </div>
+        </section>
+        <section class="section-video section-foto main-section">
+            <h2>Фото-репортажи</h2>
+            <div class="video-items">
+                <article class="video-item foto-item col-3">
+                    <div class="video-item__prev-img foto-item__prev-img">
+                        <img src="images/photo1.jpg"
+                             alt="«Амкар» в серии пенальти победил «Ростов» и вышел в четвертьфинал Кубка России">
+                    </div>
+                    <div class="flex-wrapper flex-wrapper_with-margin">
+                        <div class="video-item__date foto-item__date">
+                            26 октября 2017, 13:30
+                        </div>
+                        <div class="foto-item__quantity">
+                            25
+                        </div>
+                    </div>
+                    <h1 class="video-item__title">
+                        <a href="#">«Амкар» в серии пенальти победил «Ростов» и вышел в четвертьфинал Кубка России</a>
+                    </h1>
+                </article>
+                <article class="video-item foto-item col-3">
+                    <div class="video-item__prev-img foto-item__prev-img">
+                        <img src="images/photo2.jpg"
+                             alt="«Шинник» разгромил «Олимпиец» и стал четвертьфиналистом Кубка России">
+                    </div>
+                    <div class="flex-wrapper flex-wrapper_with-margin">
+                        <div class="video-item__date foto-item__date">
+                            26 октября 2017, 13:30
+                        </div>
+                        <div class="foto-item__quantity">
+                            25
+                        </div>
+                    </div>
+                    <h1 class="video-item__title">
+                        <a href="#">«Шинник» разгромил «Олимпиец» и стал четвертьфиналистом Кубка России</a>
+                    </h1>
+                </article>
+                <article class="video-item foto-item col-3">
+                    <div class="video-item__prev-img foto-item__prev-img">
+                        <img src="images/photo3.jpg"
+                             alt="«Крылья Советов» выбили «Рубин» из Кубка России">
+                    </div>
+                    <div class="flex-wrapper flex-wrapper_with-margin">
+                        <div class="video-item__date foto-item__date">
+                            26 октября 2017, 13:30
+                        </div>
+                        <div class="foto-item__quantity">
+                            25
+                        </div>
+                    </div>
+                    <h1 class="video-item__title">
+                        <a href="#">«Крылья Советов» выбили «Рубин» из Кубка России</a>
+                    </h1>
+                </article>
+                <article class="video-item foto-item col-3">
+                    <div class="video-item__prev-img foto-item__prev-img">
+                        <img src="images/photo4.jpg"
+                             alt="«Тосно» в серии пенальти победил «Томь» и вышел в 1/4 финала Кубка России">
+                    </div>
+                    <div class="flex-wrapper flex-wrapper_with-margin">
+                        <div class="video-item__date foto-item__date">
+                            26 октября 2017, 13:30
+                        </div>
+                        <div class="foto-item__quantity">
+                            25
+                        </div>
+                    </div>
+                    <h1 class="video-item__title">
+                        <a href="#">«Тосно» в серии пенальти победил «Томь» и вышел в 1/4 финала Кубка России</a>
+                    </h1>
+                </article>
+                <div class="all-link-block"><a href="/photo.html" class="all-link">Все фотографии</a></div>
             </div>
         </section>
     </div>
@@ -667,6 +1131,7 @@
 <script src="app/js/jquery.gray.min.js"></script>
 <script src="app/js/jquery.viewportchecker.min.js"></script>
 <script src="app/js/tooltipster.bundle.min.js"></script>
+<script src="app/js/select2.min.js"></script>
 <script src="app/js/main.js"></script>
 </body>
 </html>

@@ -113,3 +113,27 @@
     tabs[0].setAttribute("aria-selected", "true");
     panels[0].hidden = false;
 })();
+(function fixMenu(){
+    var navBlock = $('.nav-wrapper');
+    navBlockTopPosition = navBlock.offset().top;
+
+    $(window).on('scroll', function () {
+        if ($(window).scrollTop() > navBlockTopPosition) {
+            $('.nav-wrapper').addClass('nav-wrapper_fixed');
+        } else {
+            $('.nav-wrapper').removeClass('nav-wrapper_fixed');
+        }
+    });
+    $('.to-up').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });
+})();
+(function customSelect() {
+    $('.aside-table_standings .tournament-selection__custom-selection').select2({
+        dropdownParent: $('.aside-table_standings .aside-table__filter form'),
+    });
+    $('.aside-table_scorers .tournament-selection__custom-selection').select2({
+        dropdownParent: $('.aside-table_scorers .aside-table__filter form'),
+    });
+})();
